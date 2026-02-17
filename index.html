@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Florante at Laura | Review Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="bg-dots"></div>
+
+    <div class="main-container">
+        <div class="quiz-info">
+            <span id="q-count">1/50</span>
+            <div class="bar-bg"><div id="bar-fill"></div></div>
+            <div class="score-pill">Score: <span id="score-text">0</span></div>
+        </div>
+
+        <div class="card" id="quiz-box">
+            <h1 id="question-text">Loading question...</h1>
+            <div class="options-grid" id="options-box"></div>
+            
+            <div class="hint-container">
+                <button class="hint-toggle" onclick="toggleHint()">Show Hint ▾</button>
+                <div id="hint-text" class="hint-content">Ito ay isang pahiwatig...</div>
+            </div>
+
+            <div class="controls">
+                <button id="next-btn" onclick="handleNext()">Next →</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
